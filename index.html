@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🪨 Rock Paper Scissors ✂️</h1>
+
+        <p class="instructions">
+            Choose Rock, Paper, or Scissors!
+        </p>
+
+        <div class="choices">
+
+            <button onclick="playGame(1)">
+                🪨<br>
+                Rock
+            </button>
+
+            <button onclick="playGame(2)">
+                📄<br>
+                Paper
+            </button>
+
+            <button onclick="playGame(3)">
+                ✂️<br>
+                Scissors
+            </button>
+
+        </div>
+
+        <div class="result-box">
+
+            <p id="computer-choice">
+                Computer's choice: -
+            </p>
+
+            <h2 id="result">
+                Make your choice!
+            </h2>
+
+        </div>
+
+        <div class="score">
+
+            <div>
+                <span id="wins">0</span>
+                <p>Wins</p>
+            </div>
+
+            <div>
+                <span id="losses">0</span>
+                <p>Losses</p>
+            </div>
+
+            <div>
+                <span id="ties">0</span>
+                <p>Ties</p>
+            </div>
+
+        </div>
+
+        <button class="reset-button" onclick="resetGame()">
+            Reset Game
+        </button>
+
+        <p class="author">
+            This program was written by Tanya Marshman
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
